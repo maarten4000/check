@@ -1,0 +1,401 @@
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+
+.slider{
+background-repeat: no-repeat;
+background-size: cover;
+background-position; center;
+width:auto;
+height: 100vh;
+min-width:100%;
+animation: slide 20s infinite;
+}
+
+
+.content{
+color: #fff;
+width: 100%;
+height: 100%;
+background-color: rgba(0,0,0,0.5);}
+
+
+.principal{
+left: 50%;
+top:50%;
+transform: translate(-50%,-50%);
+position:absolute;
+text-align: center;
+letter-spacing: 6px;
+}
+
+
+
+
+
+.principal h1 {
+font-size:80px;
+bottom-margin:40px;
+border-bottom: 1px solid white;
+}
+
+.principal p {
+font-size: 20px;
+margin-top: 20px;
+
+}
+
+@media screen and (max-width: 1500px) {
+  .principal h1 {
+    font-size:60px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+  .principal h1 {
+    font-size:40px;
+  }
+}
+
+
+
+@keyframes slide{
+0%{
+background-image: url('/static/pics/image1.jpg');}
+
+20%{
+background-image: url('/static/pics/image1.jpg');}
+
+20.01%{
+background-image: url('/static/pics/image2.jpg');}
+
+40%{
+background-image: url('/static/pics/image2.jpg');}
+
+40.01%{
+background-image: url('/static/pics/40098939-wallpaper-canada-wallpapers.jpg');}
+
+60%{
+background-image: url('/static/pics/40098939-wallpaper-canada-wallpapers.jpg');}
+
+60.01%{
+background-image: url('/static/pics/39541577-wallpaper-canada-wallpapers.jpg');}
+
+80%{
+background-image: url('/static/pics/39541577-wallpaper-canada-wallpapers.jpg');}
+
+80.01%{
+background-image: url('/static/pics/39429608-wallpaper-canada-wallpapers.jpg');}
+
+100%{
+background-image: url('/static/pics/39429608-wallpaper-canada-wallpapers.jpg');}
+}
+
+.nav{display:flex;
+justify-content: space-between;
+position:absolute;
+align-items:center;
+top:0%;
+left:0%;
+min-height: 5vh;
+background-color: rgba(0,0,0,0.6);
+width:100%;
+
+
+}
+
+@media screen and (max-width: 1700px) {
+  .navlinks li{
+  width: 30%;
+  padding-left:20px;
+
+  font-size:16px;
+
+  }
+}
+
+
+.Logo{color:white;
+font-size:25px;
+letter-spacing: 2px;
+padding-left:90px;
+text-transform: uppercase;
+padding-right:740px;}
+
+
+@media screen and (max-width: 1650px) {
+  .Logo{
+  padding-right:240px;
+
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .Logo{
+  padding-right:140px;
+
+  }
+}
+
+.burger{display:none;}
+
+
+.burger div{width:25px;
+height:4px;
+background-color:rgb(266,266,266);
+margin: 5px;
+
+}
+
+
+
+
+
+.navlinks{list-style:none;
+}
+
+.navlinks li{
+color:white;
+letter-spacing:2px
+width: 80%;
+justify.content: center;
+display:inline-block;}
+
+.navlinks li a{
+letter-spacing: 2px;
+width:20%;
+padding:60px;
+text-transform: uppercase;
+color: white;
+text-decoration: none;}
+
+.navlinks li a:hover{
+cursor:pointer;
+color: #FFAE00;
+font-size: 17px;
+}
+
+
+
+@media screen and (max-width: 920px){
+body{
+overflow-x:hidden;}
+
+   .navlinks{position:absolute;
+   right:0%;
+   height:95vh;
+   background-color: rgba(0,0,0,0.6);
+   display:flex;
+   flex-direction: column;
+   align-item:center;
+   width:50%;
+   transform:translateX(100%);
+    transition: transform 0.5s ease-in;
+   top:5vh;
+
+
+
+   }
+   }
+
+@media screen and (max-width: 920px){
+   .navlinks li {
+   padding-bottom:80px;
+
+   width:100%;
+   opacity:1;
+   }
+   .burger{
+   display:block;}
+   }
+
+
+
+
+
+.nav-active{
+transform:translateX(0%);
+}
+
+
+
+
+
+
+.container{
+display:flex;
+width:100%;
+height:49%;
+justify-content: normal;
+top:5%;
+position:absolute;
+
+}
+
+
+.container-left{
+background-image: url('/static/pics/Afbeelding1.jpg');
+background-position: center center;
+background-color:rgba(0,0,0,0.1);
+
+background-repeat: no-repeat;
+
+background-size: cover;
+width: 25%;
+}
+
+
+.container-right{
+width: 75%;
+background-color:rgba(0,0,0,0.1);
+
+}
+
+.container-right h1{
+text-align:center;
+padding-bottom:20px;
+padding-top:40px;
+letter-spacing: 2px;
+font-size:50px;
+font-weight:bold;
+text-transform: uppercase;
+}
+
+
+.container-right p{
+text-align:center;
+padding-bottom:20px;
+padding-top:20px;
+font-size:15px;
+letter-spacing: 1px;
+
+}
+
+.container1{
+
+display:flex;
+
+top:48%;
+position:absolute;
+width:100%;
+overflow:hidden;
+height:52%;
+
+}
+
+
+
+.container-left1{
+position:relative;
+min-width:33.3%;
+width:33.3%;
+background-image: url('/static/pics/istockphoto-1026451648-170667a.jpg');
+background-size: cover;
+background-position; center;
+text-align:center;
+background-position: center center;
+padding:0;
+background-repeat: no-repeat;
+min-width:33.3%;
+border: 1px solid black;
+
+}
+
+@media screen and(max-width:1200 px) {
+.container-left1{width:0%;
+}
+}
+
+
+
+
+
+.container-middel1{
+background-image: url('/static/pics/June-Blog-Cover-Image-Backoffice-Bookkeeping-for-Accountants-.jpg');
+
+
+background-position: center center;
+background-repeat: no-repeat;
+width:33.3%;
+min-width:33.3%;
+border: 1px solid black;
+
+}
+
+.container-right1{
+min-width:33.3%;
+width:33.3%;
+object-fit:contains;
+background-image: url('/static/pics/Machine-learning.jpg');
+
+background-position: center center;
+background-repeat: no-repeat;
+
+border: 1px solid black;
+}
+
+.container-left1:hover{
+transform:scale(1.20);
+}
+
+.container-middel1:hover{
+transform:scale(1.20);
+}
+
+.container-right1:hover{
+transform:scale(1.20);
+}
+
+.image_title{color: white;
+text-align:center;
+top:50%;
+right:10%;
+translate:translate(-50%,-50%);
+position:absolute;
+font-size:32px;
+letter-spacing: 4px;
+text-transform:uppercase;
+}
+
+
+.projecten{
+position:absolute;
+
+top:10%;
+box-sizing:border-box;
+left:15%;
+border: 5px solid black;
+width:70%;
+height:89%;
+margin:0.1em;}
+
+
+.python{
+
+width:100%;
+height:33.3%;
+border: 2px solid red;
+}
+
+.lerer{
+
+width:100%;
+height:33.3%;
+border: 2px solid blue;
+}
+
+.dashboard{
+position:absolute;
+
+width:100%;
+height:33.3%;
+border: 2px solid yellow;
+}
