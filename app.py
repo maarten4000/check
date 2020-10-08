@@ -23,6 +23,14 @@ def projecten():
     return render_template("projecten.html")
 
 
+
+
+@app.route("/lol", methods=["GET","POST"])
+def lol():
+    return render_template("lol.html")
+
+
+
 if __name__ == "__main__":
     app.run()
     app.debug = True

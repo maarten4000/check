@@ -282,30 +282,35 @@ letter-spacing: 1px;
 .container1{
 
 display:flex;
-
+flex-direction:column;
 top:48%;
+overflow:hidden;
 position:absolute;
 width:100%;
-overflow:hidden;
+
 height:52%;
 
 }
 
 
 
+
+
 .container-left1{
-position:relative;
-min-width:33.3%;
-width:33.3%;
+
+
+height:auto;
+width:100%;
 background-image: url('/static/pics/istockphoto-1026451648-170667a.jpg');
 background-size: cover;
 background-position; center;
 text-align:center;
 background-position: center center;
 padding:0;
+overflow:hidden;
+align-text:center;
 background-repeat: no-repeat;
-min-width:33.3%;
-border: 1px solid black;
+height:30.3%;
 
 }
 
@@ -320,26 +325,29 @@ border: 1px solid black;
 
 .container-middel1{
 background-image: url('/static/pics/June-Blog-Cover-Image-Backoffice-Bookkeeping-for-Accountants-.jpg');
-
+overflow:hidden;
 
 background-position: center center;
 background-repeat: no-repeat;
-width:33.3%;
-min-width:33.3%;
-border: 1px solid black;
+background-size:cover;
+height:30.3%;
+width:100%;
+
+
 
 }
 
 .container-right1{
-min-width:33.3%;
-width:33.3%;
-object-fit:contains;
-background-image: url('/static/pics/Machine-learning.jpg');
 
+height:40.3%;
+width:100%;
+object-fit:cover;
+background-size:cover;
+background-image: url('/static/pics/Machine-learning.jpg');
+overflow:hidden;
 background-position: center center;
 background-repeat: no-repeat;
 
-border: 1px solid black;
 }
 
 .container-left1:hover{
@@ -356,12 +364,13 @@ transform:scale(1.20);
 
 .image_title{color: white;
 text-align:center;
-top:50%;
+bottom:70%;
 right:10%;
+position:relative;
 translate:translate(-50%,-50%);
-position:absolute;
-font-size:32px;
-letter-spacing: 4px;
+
+font-size:16px;
+letter-spacing: 2px;
 text-transform:uppercase;
 }
 
